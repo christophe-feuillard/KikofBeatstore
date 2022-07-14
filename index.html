@@ -1,0 +1,387 @@
+<!DOCTYPE html> 
+
+<html lang="fr">
+
+ <head> 
+   
+   <meta charset="utf-8"> 
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="description" content="Kikof Beatstore">
+   <meta name="author" content="Christophe Feuillard">
+   <title>Accueil | Kikof Beatstore</title>
+   <link rel="stylesheet" href="index.css">
+   <link rel="icon" type="image/png" href="ressources/logoavecfond.png" size="10x10"/>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+ </head>
+
+
+
+<body>
+ <!---------------------------------------->
+ <header>
+
+  <div class="div_navbar">
+  
+     <nav class="barredenav">
+  
+      <a class="nav_item" id="logo" href="index.html"></a>
+      <a class="apropos_class nav_item" href="apropos.html"> <h2> A propos</h2>   </a>
+      <a class="contact_class nav_item" href="contact.html">  <h2> Contact</h2></a>
+  
+      <div id="div_inutile" class="nav_item"></div>
+  
+      <div class="nav_item">
+         <a href="panier.html" id="panier">
+           <i class="fas fa-shopping-cart shoppingcart"></i>
+           <span id="dollar">0</span>        
+         </a> 
+      </div>
+  
+    </nav>
+  
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+  
+  </div> 
+  
+  </header>
+<!---------------------------------------->
+<div id="imagedefond">
+  
+  <div class="barrederecherche">
+      <input id="txt_recherche" type="text" placeholder="The name of the track ?">
+      <button class="boutonrech">
+       <i id="bouton_rech" class="fas fa-search"></i>
+      </button>
+  </div>    
+</div>
+<!---------------------------------------->
+<div id="container_instrumentales"> 
+  <h1>  
+    <span>INSTRUMENTALES</span> 
+  </h1>
+</div>
+<!---------------------------------------->
+
+<main>
+
+  <div>
+
+    <form id="filter" action="filterget.php" method="get">
+
+        <div id="filterh2contain">
+
+          <div>
+            <i class="fas fa-sort-down"></i>  
+          </div>
+
+           <h2>FILTER</h2> 
+
+           <div>
+            <i class="fas fa-sort-down"></i>  
+           </div>
+
+        </div> 
+
+     <div id="filter-box-bpm">
+
+       <div class="bpmspan_famusic">
+        <i class="fas fa-music"></i>
+        <span>BPM</span>
+       </div>
+
+       <a class="champ_bpm" href="" data-filter="all">All</a>
+       <a class="champ_bpm" href="" data-filter="80-100">80 - 100</a>
+       <a class="champ_bpm" href="" data-filter="100-120">100 - 120</a>
+       <a class="champ_bpm" href="" data-filter="120-135">120 - 135</a>
+       <a class="champ_bpm" href="" data-filter="135+">135 +</a>
+     </div>
+  
+     
+
+   
+
+    </form>
+
+    <div class="container_tracklist">
+
+      <div id="ttbt">
+       <span>TITLE</span>
+       <span>TIME</span>
+       <span>BPM</span>
+       <span>TAGS</span>
+      </div>
+
+      <div class="track 80-100 titre1">
+
+        <div id="adrenaline_img" class="track_img">
+
+          <audio>
+             <source src="audio/adrenaline.mp3" type="audio/mpeg">
+          </audio>
+
+         <button class="playpausebtnclass">
+
+          <div class="faPlay">
+           <i class="fas fa-play"></i> 
+          </div>    
+         
+         </button>
+         
+        </div>
+
+        <div class="faPause">
+          <i class="fas fa-pause"></i>
+        </div>
+
+        <h3>Titre 1</h3>
+        <span class="time_track">3:30</span>
+        <span class="bpm_track">85</span>
+        <span class="track_tags">
+         #tag1   #tag2   #tag3
+        </span>
+
+        <div class="track_ajoutpanier">
+          <i class="fas fa-shopping-cart shoppingcart shocar"></i>
+          <span>20$</span>
+        </div>
+
+      </div> 
+
+      <div class="track 100-120 titre2">
+
+        <div id="passe_img" class="track_img">
+
+          <audio>
+             <source src="audio/passe.mp3" type="audio/mpeg">
+          </audio>
+
+         <button class="playpausebtnclass">
+
+          <div class="faPlay">
+           <i class="fas fa-play"></i> 
+          </div>    
+         
+         </button>
+         
+        </div>
+
+        <div class="faPause">
+          <i class="fas fa-pause"></i>
+        </div>
+
+        <h3>Titre 2</h3>
+        <span class="time_track">3:30</span>
+        <span class="bpm_track">113</span>
+        <span class="track_tags">
+         #tag1   #tag2   #tag3
+        </span>
+
+        <div class="track_ajoutpanier">
+          <i class="fas fa-shopping-cart shoppingcart shocar"></i>
+          <span>20$</span>
+        </div>
+
+      </div> 
+
+      <div class="track 120-135 titre3">
+
+        <div id="racks_img" class="track_img">
+
+          <audio>
+             <source src="audio/racks.mp3" type="audio/mpeg">
+          </audio>
+
+         <button class="playpausebtnclass">
+
+          <div class="faPlay">
+           <i class="fas fa-play"></i> 
+          </div>    
+         
+         </button>
+         
+        </div>
+
+        <div class="faPause">
+          <i class="fas fa-pause"></i>
+        </div>
+
+        <h3>Titre 3</h3>
+        <span class="time_track">3:30</span>
+        <span class="bpm_track">130</span>
+        <span class="track_tags">
+         #tag1   #tag2   #tag3
+        </span>
+
+        <div class="track_ajoutpanier">
+          <i class="fas fa-shopping-cart shoppingcart shocar"></i>
+          <span>20$</span>
+        </div>
+
+      </div> 
+
+      <div class="track 135+ titre4">
+
+        <div id="deutsche_img" class="track_img">
+
+          <audio>
+             <source src="audio/Deutsche Qualität.mp3" type="audio/mpeg">
+          </audio>
+
+         <button class="playpausebtnclass">
+
+          <div class="faPlay">
+           <i class="fas fa-play"></i> 
+          </div>    
+         
+         </button>
+         
+        </div>
+
+        <div class="faPause">
+          <i class="fas fa-pause"></i>
+        </div>
+
+        <h3>Titre 4</h3>
+        <span class="time_track">3:30</span>
+        <span class="bpm_track">145</span>
+        <span class="track_tags">
+         #tag1   #tag2   #tag3
+        </span>
+
+        <div class="track_ajoutpanier">
+          <i class="fas fa-shopping-cart shoppingcart shocar"></i>
+          <span>20$</span>
+        </div>
+
+      </div>      
+      
+      <div class="track 135+ titre5">
+
+        <div id="degaine_img" class="track_img">
+
+          <audio>
+             <source src="audio/degaine.mp3" type="audio/mpeg">
+          </audio>
+
+         <button class="playpausebtnclass">
+
+          <div class="faPlay">
+           <i class="fas fa-play"></i> 
+          </div>    
+         
+         </button>
+         
+        </div>
+
+        <div class="faPause">
+          <i class="fas fa-pause"></i>
+        </div>
+
+        <h3>Titre 5</h3>
+        <span class="time_track">3:30</span>
+        <span class="bpm_track">140</span>
+        <span class="track_tags">
+         #tag1   #tag2   #tag3
+        </span>
+
+        <div class="track_ajoutpanier">
+          <i class="fas fa-shopping-cart shoppingcart shocar"></i>
+          <span>20$</span>
+        </div>
+
+      </div> 
+
+      <div class="track 80-100 titre6">
+
+        <div id="macabre_img" class="track_img">
+
+          <audio>
+             <source src="audio/macabre.mp3" type="audio/mpeg">
+          </audio>
+
+         <button class="playpausebtnclass">
+
+          <div class="faPlay">
+           <i class="fas fa-play"></i> 
+          </div>    
+         
+         </button>
+         
+        </div>
+
+        <div class="faPause">
+          <i class="fas fa-pause"></i>
+        </div>
+
+        <h3>Titre 6</h3>
+        <span class="time_track">3:30</span>
+        <span class="bpm_track">82</span>
+        <span class="track_tags">
+         #tag1   #tag2   #tag3
+        </span>
+
+        <div class="track_ajoutpanier">
+          <i class="fas fa-shopping-cart shoppingcart shocar"></i>
+          <span>20$</span>
+        </div>
+
+      </div>        
+        
+
+    </div>
+
+  </div> 
+
+</main>
+
+
+<!---------------------------------------->
+<footer>
+  <div class="sousfooter"> 
+ 
+       <section class="rs">
+ 
+           <a class="logofooter" id="ytb" href="" target="_blank">
+            <i class="fab fa-youtube"></i>
+           </a>
+ 
+           <a class="logofooter" id="insta" href="" target="_blank">
+            <i class="fab fa-instagram"></i>
+           </a>
+           
+ 
+           <a id="keakr" class="logofooter" href="" target="_blank">
+           </a>
+ 
+           <a class="logofooter" id="twitch" href="" target="_blank">
+            <i class="fab fa-twitch"></i>
+           </a>
+ 
+       </section>
+ 
+       <section class="section_droit">
+         <article class="artc_droit">
+          <p> <span id="kbs">© Kikof Beatstore</span> | Tous droits réservés</p>
+         </article>
+       </section>
+ 
+  </div>
+ </footer>
+<!---------------------------------------->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" integrity="sha384-haqrlim99xjfMxRP6EWtafs0sB1WKcMdynwZleuUSwJR0mDeRYbhtY+KPMr+JL6f" crossorigin="anonymous"></script>
+<script src="script/indexscript.js"></script>
+</body>
+
+
+</html>

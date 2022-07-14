@@ -1,0 +1,298 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: "Roboto";
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*************************************************************************/
+
+header {
+    height: 70px;
+    background-color: #000000;
+}
+.barredenav {
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: black;
+   
+    display: grid;
+    grid-template-columns: 110px 150px 150px 1fr 150px;
+    border-bottom: 3px solid rgba(88, 88, 88, 0.678);
+    top: 0;
+    left: 0;
+}
+
+
+
+.barredenav > a:hover {
+    -webkit-transition: 0.3s ease;
+}
+.barredenav > a > h2 {
+    align-self: center;
+}
+#logo:hover{
+    -webkit-transform: scale(0.9); 
+    -ms-transform: scale(0.9); 
+    -moz-transform: scale(0.9); 
+    transform: scale(0.9);
+    opacity: 0.5; 
+}
+
+#logo {
+    background-image: url("ressources/monlogo.png");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: 15px -3px;
+
+    float: left; 
+    width: 110px;
+    height: 70px;
+   
+}
+
+.apropos_class {
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+.apropos_class:hover, .contact_class:hover {
+      color:#514EE0;
+}
+
+.contact_class {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    
+}
+
+.barredenav :nth-child(4) {
+    background-color: rgb(0, 0, 0);
+}
+
+.barredenav :nth-child(5) {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+}
+
+#panier {
+    display: flex;
+    align-self: center;
+    border-radius: 5px;
+    width: 100px;
+    height: 48px;
+    background-color: #514EE0;
+    justify-content: space-evenly;
+    text-decoration: none;
+    color: inherit;
+}
+
+#panier:hover {
+    opacity: 0.8;
+  }
+
+.shoppingcart {
+    align-self: center;
+    font-size: 30px;
+}
+
+#dollar {
+    align-self: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+}
+/**********************************************************/
+
+    #imagedefond{    
+        background-image: url("ressources/fondretrofuturiste.jpg");
+        width: 100%;
+        height: 78vh;
+        min-height: 840px;
+        align-self: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #blur {
+        filter: blur(3px);
+        -webkit-filter: blur(3px);
+        -moz-filter: blur(3px);
+        -o-filter: blur(3px);
+        -ms-filter: blur(3px);
+      }
+      #imagedefond > div {
+        width: 65%;
+        min-width: 950px;
+        height: 490PX;
+        background-color: rgb(20, 20, 20);
+        display: flex;
+    }
+    .image_apropos {
+        background-image: url("ressources/logoavecfond.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        z-index: 3;
+        clip-path: polygon(0 0, 100% 0, 71% 100%, 0% 100%);
+        width: 35%;
+        height: 490PX;
+    }
+    .article_apropos {
+        background-color: rgb(20, 20, 20);
+        width: 65%;
+        height: 490PX;
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+    h1 {
+        margin-top: 30px;
+        margin-bottom: 15px;
+        color: white;
+        text-decoration: underline #4B68D0;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .article_apropos > p {
+       color: white;
+       line-height: 22px;
+       font-size: 1.2rem;
+    }
+
+
+/**********************************************************/
+footer {
+    
+    width: 100%;
+    height: 100PX;
+    background-color: #000000;
+}
+
+.logofooter:hover {
+    background-color: #4652C7;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.sousfooter{
+    background-color: #ffffff;
+    border-radius: 50px;
+    height: 100px;
+    width: 520px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.rs {
+  padding-top: 5px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.section_droit {
+    background-color: #ffffff;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .artc_droit {
+      align-self: center;     
+  }
+
+.logofooter {
+    width: 42px;
+    height: 42px;
+    background-color: black;
+    border-radius: 25px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+ 
+}
+
+.fa-youtube {
+     font-size: 25px;
+     color: white;
+     align-self: center;
+
+}
+.fa-instagram {
+    font-size: 25px;
+    color: white;
+    align-self: center;
+}
+
+#keakr {
+    background-image: url("ressources/keakr.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+.fa-twitch {
+    font-size: 25px;
+    color: white;
+    align-self: center;
+}
+#kbs {
+    color: #514EE0;
+}
+
